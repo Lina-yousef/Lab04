@@ -1,17 +1,21 @@
-var userName =prompt('Please enter your name');
-alert('Hi '+userName+'! Welcome to Pink Flower');
+var userName = prompt('Please enter your name');
+console.log(userName);
+alert('Hi ' + userName + '! Welcome to Pink Flower');
 
-document.write('Hi'+' '+userName+'! Welcome to Pink Flower store');
+document.write('Hi' + ' ' + userName + '! Welcome to Pink Flower store');
 
-var budget = 50 ;
-            var message;
-          
-            if (budget < 50) {
-                message='Order now and get 30% discount for shipping'+userName;
+var budget = 50;
+var message;
+budget = prompt('insert your budget');
 
-            }
-            else {
-                message='Order now and get a free shipping'+userName;
-            }
-            var budget = prompt('insert your budget');
+if (budget < 50) {
+    message = 'Order now and get 30% discount for shipping' + userName;
+
+}
+else {
+    message = 'Order now and get a free shipping ,' + + userName;
+}
+
+
+alert(message);
 
