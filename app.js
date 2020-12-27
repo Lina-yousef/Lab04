@@ -1,13 +1,38 @@
-var userName = prompt('Please enter your name');
 
-while (userName === null || userName === '' ) {
-    userName = prompt('Please enter your name');
+var validUserName=validateUserName();
+var userAge =prompt('Please enter your age');
+
+//while (userName === null || userName === '') {
+//    userName = prompt('Please enter your name');
+//console.log(userName);
+
+//var takeUserName=prompt('Please enter your name ');
+
+function validateUserName(){
+    var userName = prompt('Please enter your name');
+    while ( userName=== null || userName === '' ||userName === undefined) {
+        userName=prompt('please enter your name')
+    }
+    return userName;
+} 
+
+
+function displayMsg(uName , uAge){
+
+    alert('Hi'+uName+'..!  Welcome to Pink Flower store.'+uAge );
 }
-console.log(userName);
+    displayMsg(validUserName,userAge);
 
-alert('Hi ' + userName + '! Welcome to Pink Flower');
 
-document.write('Hi ' + userName + '! Welcome to Pink Flower store');
+
+
+
+
+
+
+//alert('Hi ' + userName + '! Welcome to Pink Flower');
+
+//document.write('Hi ' + userName + '! Welcome to Pink Flower store');
 
 var budget = 50;
 var message;
@@ -25,14 +50,18 @@ alert(message);
 
 
 var Bouquet = prompt('How many Bouquet do you want ?');
-var tagToAdd = "";
-for (var i= 0;  Bouquet > i ; i++) {
+for (var i = 0; Bouquet > i; i++) {
 
-    //tagToAdd = tagToAdd + '<p>' + "" + Bouquet+'</p>';
-    document.write('<p>'+(i+1)+'</p>');
+    document.write('<p>' + (i + 1) + '</p>');
     document.write('<img src="flower.webp">');
 
-   //var  document.getElementById()
-
 }
+
+ 
+
+
+
+
+
+
 

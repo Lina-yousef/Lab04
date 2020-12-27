@@ -1,0 +1,15 @@
+.Header-list{
+
+    display: inline;
+    border : 20px;
+    padding: 20px;
+    margin: 20;
+    float: right;
+    background-color: rgba(106, 71, 161, 0.425);
+    text-decoration-color: rgb(214, 83, 214);
+    text-align: center;
+
+}
+
+
+
